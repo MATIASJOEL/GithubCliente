@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="joel.com.aplicacion.githubcliete.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/textViewname"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/imageViewavatar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Login"
+        android:id="@+id/textViewlogin"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewname"
+        android:layout_alignLeft="@+id/textViewlocation"
+        android:layout_alignStart="@+id/textViewlocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Email"
+        android:id="@+id/textViewemail"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Location"
+        android:id="@+id/textViewlocation"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textViewemail"
+        android:layout_alignRight="@+id/textViewname"
+        android:layout_alignEnd="@+id/textViewname" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageViewavatar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignRight="@+id/textViewname"
+        android:layout_alignEnd="@+id/textViewname"
+        android:layout_alignLeft="@+id/textViewname"
+        android:layout_alignStart="@+id/textViewname"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+</RelativeLayout>
